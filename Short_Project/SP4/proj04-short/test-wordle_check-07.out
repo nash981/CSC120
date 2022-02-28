@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: KEVLAR
+Guess:   GRAINY
+-----    ------
+MATCH:   ......
+MISS:    .RA...
+
+
+--------------- reversed ---------------
+
+Correct: GRAINY
+Guess:   KEVLAR
+-----    ------
+MATCH:   ......
+MISS:    ....AR
+
+TESTCASE COMPLETED

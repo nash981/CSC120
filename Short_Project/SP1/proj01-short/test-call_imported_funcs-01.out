@@ -1,0 +1,15 @@
+foo() was called:  a=asdf  b=10
+<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>
+bar() was called:  b=10  b squared: 100   b sqrt: 3.1622776601683795
+    I will return nothing, so the retval should be 'None'
+None
+baz() was called:
+    a2 = asdf
+    b2 = 10
+    b2 = 10    (again)
+    a2 = asdf    (again)
+    combined: asdf|10
+    baz() is done.
+7
+foo() was called:  a=<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>  b=7
+<<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>><<asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf><asdf>>

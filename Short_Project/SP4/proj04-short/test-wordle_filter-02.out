@@ -1,0 +1,44 @@
+Testing word_filter()...
+
+CORRECT: RUMBLE
+
+STARTED WITH 10059 WORDS:
+
+GUESS: TAXING
+       ......
+       ......
+10059 words remain.
+
+GUESS: SPIRAL
+       ......
+       ...R.L
+869 words remain.
+
+GUESS: PADRES
+       ......
+       ...RE.
+242 words remain.
+
+GUESS: FUSION
+       .U....
+       ......
+20 words remain.
+
+GUESS: PURELY
+       .U..L.
+       ..RE..
+7 words remain.
+
+GUESS: RUSTLE
+       RU..LE
+       ......
+7 words remain.
+
+AFTER ALL GUESSES, THE FOLLOWING WORDS REMAIN:
+RUCKLE
+RUMBLE
+RUMPLE
+RUNDLE
+RUNKLE
+RUSTLE
+RUTILE

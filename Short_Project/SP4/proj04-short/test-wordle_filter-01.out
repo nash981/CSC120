@@ -1,0 +1,35 @@
+Testing word_filter()...
+
+CORRECT: BUILT
+
+STARTED WITH 9229 WORDS:
+
+GUESS: WHICH
+       ..I..
+       .....
+726 words remain.
+
+GUESS: LOCUS
+       .....
+       L..U.
+8 words remain.
+
+GUESS: FAULT
+       ...LT
+       ..U..
+3 words remain.
+
+GUESS: SMART
+       ....T
+       .....
+3 words remain.
+
+GUESS: GUILT
+       .UILT
+       .....
+3 words remain.
+
+AFTER ALL GUESSES, THE FOLLOWING WORDS REMAIN:
+BUILT
+GUILT
+QUILT

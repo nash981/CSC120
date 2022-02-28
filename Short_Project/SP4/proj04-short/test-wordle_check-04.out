@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: POUR
+Guess:   SOUL
+-----    ----
+MATCH:   .OU.
+MISS:    ....
+
+
+--------------- reversed ---------------
+
+Correct: SOUL
+Guess:   POUR
+-----    ----
+MATCH:   .OU.
+MISS:    ....
+
+TESTCASE COMPLETED

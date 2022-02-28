@@ -1,0 +1,10 @@
+STARTING DATA:
+  foo : 1234
+  bar : 888888
+  baz : -1
+  fred : 256
+
+Calling max_key_by_val()...
+Call complete.
+
+Retval: bar

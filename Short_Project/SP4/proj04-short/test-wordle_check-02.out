@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: FLATBED
+Guess:   MUSTARD
+-----    -------
+MATCH:   ...T..D
+MISS:    ....A..
+
+
+--------------- reversed ---------------
+
+Correct: MUSTARD
+Guess:   FLATBED
+-----    -------
+MATCH:   ...T..D
+MISS:    ..A....
+
+TESTCASE COMPLETED

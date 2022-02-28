@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: HAMSTER
+Guess:   CARPETS
+-----    -------
+MATCH:   .A.....
+MISS:    ..R.ETS
+
+
+--------------- reversed ---------------
+
+Correct: CARPETS
+Guess:   HAMSTER
+-----    -------
+MATCH:   .A.....
+MISS:    ...STER
+
+TESTCASE COMPLETED

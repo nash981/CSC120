@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: IBERIAN
+Guess:   BURRILL
+-----    -------
+MATCH:   ...RI..
+MISS:    B......
+
+
+--------------- reversed ---------------
+
+Correct: BURRILL
+Guess:   IBERIAN
+-----    -------
+MATCH:   ...RI..
+MISS:    .B.....
+
+TESTCASE COMPLETED

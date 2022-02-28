@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: BRISTLE
+Guess:   MATURED
+-----    -------
+MATCH:   .......
+MISS:    ..T.RE.
+
+
+--------------- reversed ---------------
+
+Correct: MATURED
+Guess:   BRISTLE
+-----    -------
+MATCH:   .......
+MISS:    .R..T.E
+
+TESTCASE COMPLETED

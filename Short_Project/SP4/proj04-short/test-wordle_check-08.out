@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: SPACER
+Guess:   RECAPS
+-----    ------
+MATCH:   ......
+MISS:    RECAPS
+
+
+--------------- reversed ---------------
+
+Correct: RECAPS
+Guess:   SPACER
+-----    ------
+MATCH:   ......
+MISS:    SPACER
+
+TESTCASE COMPLETED

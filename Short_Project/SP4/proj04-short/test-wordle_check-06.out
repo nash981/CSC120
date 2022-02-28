@@ -1,0 +1,18 @@
+Testing the wordle utils check() function...
+
+Correct: SONIC
+Guess:   SONIC
+-----    -----
+MATCH:   SONIC
+MISS:    .....
+
+
+--------------- reversed ---------------
+
+Correct: SONIC
+Guess:   SONIC
+-----    -----
+MATCH:   SONIC
+MISS:    .....
+
+TESTCASE COMPLETED

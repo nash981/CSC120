@@ -1,0 +1,29 @@
+Building the new object...
+
+Playing a few moves... (nothing should be rejected, in this set)
+
+Playing many more moves... (I expect to definitely have some columns fill up eventually)
+A move was rejected.  i=13 MOVES[i]=3
+A move was rejected.  i=15 MOVES[i]=2
+A move was rejected.  i=19 MOVES[i]=3
+A move was rejected.  i=21 MOVES[i]=3
+A move was rejected.  i=22 MOVES[i]=2
+A move was rejected.  i=23 MOVES[i]=2
+A move was rejected.  i=24 MOVES[i]=3
+A move was rejected.  i=25 MOVES[i]=2
+A move was rejected.  i=26 MOVES[i]=3
+A move was rejected.  i=27 MOVES[i]=3
+A move was rejected.  i=28 MOVES[i]=3
+
+Dumping the game state properties:
+  is_game_over()   : False
+  is_board_full()  : False
+  is_column_full(0): False
+  is_column_full(1): False
+  is_column_full(2): True
+  is_column_full(3): True
+  is_column_full(4): False
+  is_column_full(5): False
+  is_column_full(6): False
+
+TESTCASE COMPLETED

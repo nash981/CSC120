@@ -1,0 +1,11 @@
+Building the new object...
+
+Doing a few get_cell() calls:
+  (0,0) : None
+  (2,0) : None
+  (4,2) : None
+  (4,5) : None
+  (6,3) : None
+  (0,5) : None
+
+TESTCASE COMPLETED

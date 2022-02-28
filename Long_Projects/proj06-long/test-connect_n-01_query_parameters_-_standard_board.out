@@ -1,0 +1,8 @@
+Building the new object...
+
+Dumping the basic properties:
+  get_size()       : (7, 6)
+  get_target()     : 4
+  get_player_list(): ['Red', 'Yellow']
+
+TESTCASE COMPLETED

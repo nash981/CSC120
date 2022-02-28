@@ -1,0 +1,16 @@
+Building the new object...
+
+Playing a few moves...
+
+Dumping the game state properties:
+  is_game_over()   : False
+  is_board_full()  : False
+  is_column_full(0): False
+  is_column_full(1): False
+  is_column_full(2): False
+  is_column_full(3): False
+  is_column_full(4): False
+  is_column_full(5): False
+  is_column_full(6): False
+
+TESTCASE COMPLETED

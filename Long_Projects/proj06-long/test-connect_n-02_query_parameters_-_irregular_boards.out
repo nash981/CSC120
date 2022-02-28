@@ -1,0 +1,33 @@
+----- TEST 1 -----
+Building the new object...
+
+Dumping the basic properties:
+  get_size()       : (3, 10)
+  get_target()     : 9
+  get_player_list(): ['Blue', 'Green', 'Mauve']
+
+----- TEST 2 -----
+Building the new object...
+
+Dumping the basic properties:
+  get_size()       : (3, 3)
+  get_target()     : 2
+  get_player_list(): ['Red', 'Yellow']
+
+----- TEST 3 -----
+Building the new object...
+
+Dumping the basic properties:
+  get_size()       : (6, 7)
+  get_target()     : 4
+  get_player_list(): ['Yellow', 'Red']
+
+----- TEST 4 -----
+Building the new object...
+
+Dumping the basic properties:
+  get_size()       : (10, 10)
+  get_target()     : 5
+  get_player_list(): ['Red', 'Yellow']
+
+TESTCASE COMPLETED

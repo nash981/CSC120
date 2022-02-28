@@ -1,0 +1,1125 @@
+Building the new object...
+
+---- MOVE 0 : Column 0 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+
+---- MOVE 1 : Column 5 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+
+---- MOVE 2 : Column 1 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+
+---- MOVE 3 : Column 6 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+
+---- MOVE 4 : Column 0 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+
+---- MOVE 5 : Column 3 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+
+---- MOVE 6 : Column 2 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+
+---- MOVE 7 : Column 5 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+
+---- MOVE 8 : Column 6 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+
+---- MOVE 9 : Column 2 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+
+---- MOVE 10 : Column 0 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+
+---- MOVE 11 : Column 6 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 12 : Column 2 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 13 : Column 1 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 14 : Column 3 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : None
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 15 : Column 6 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 16 : Column 1 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 17 : Column 0 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 18 : Column 1 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : Red
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 19 : Column 6 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : Red
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : None
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : Yellow
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 20 : Column 2 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : Red
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : Red
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : None
+    4 : Yellow
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+---- MOVE 21 : Column 6 ----
+  Column 0
+    5 : None
+    4 : None
+    3 : Yellow
+    2 : Red
+    1 : Red
+    0 : Red
+  Column 1
+    5 : None
+    4 : None
+    3 : Red
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 2
+    5 : None
+    4 : None
+    3 : Red
+    2 : Red
+    1 : Yellow
+    0 : Red
+  Column 3
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Red
+    0 : Yellow
+  Column 4
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : None
+    0 : None
+  Column 5
+    5 : None
+    4 : None
+    3 : None
+    2 : None
+    1 : Yellow
+    0 : Yellow
+  Column 6
+    5 : Yellow
+    4 : Yellow
+    3 : Yellow
+    2 : Yellow
+    1 : Red
+    0 : Yellow
+
+TESTCASE COMPLETED

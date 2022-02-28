@@ -1,4 +1,4 @@
-'''
+"""
     Author: Nishant Athawale
     Date: 22nd February 2022
     Class: CSC 120
@@ -11,10 +11,10 @@
     all functions return None. None is actually a special type of object.
     This is important because if None is a value, "returns nothing,"
     "doesn't return anything," and "no returns" are incorrect.
-'''
+"""
 
 
-class Room:
+class Grid:
     """
         This class represents one room in a grid.  It can contain any number
         of rooms in north, south, east and west direction .
@@ -39,9 +39,10 @@ class Room:
         self.s = None
         self.e = None
         self.w = None
+        self.val = None
 
     def setter(self, north, south, east, west):
-        '''
+        """
             This function links the adjacent rooms to the current room
             object by populating the north, south, east and west fields
             with the room objects in the respective directions.
@@ -58,30 +59,31 @@ class Room:
                 correct object
 
             Returns: None
-        '''
+        """
         self.n = north
         self.s = south
         self.e = east
         self.w = west
+        self.val = "."
 
     def set_name(self, name):
-        '''
+        """
             This function sets the name of the object
             Parameters:
                 self:   This refers to the object itself
                 name:   This is the name of the object
             Returns: None
-        '''
+        """
         self._name = name
 
     def get_name(self):
-        '''
+        """
             This function returns the name of the object
             Parameters:
                 self:   This refers to the object itself
             Returns:
                 The name of the object
-        '''
+        """
         return str(self._name)
 
     def collapse_room(self):
@@ -100,7 +102,7 @@ class Room:
 
 
 def populate_grid(wid, hei, obj_grid):
-    '''
+    """
     This function links the adjacent rooms by populating the
     north, south, east and west fields with the room objects
     in the respective directions
@@ -112,7 +114,7 @@ def populate_grid(wid, hei, obj_grid):
 
     Returns:
         This function returns the south-west corner of the grid.
-    '''
+    """
     north, south, east, west = None, None, None, None
     for i in range(hei):
         for j in range(wid):
@@ -152,21 +154,20 @@ def populate_grid(wid, hei, obj_grid):
 
 
 def build_grid(wid, hei):
-    '''
+    """
         This function builds the grid.
         Parameters:
             wid: Width of the grid
             hei: Height of the grid
         Returns:
             This function returns the south-west corner of the grid.
-    '''
+    """
     obj_grid = []
     floor_list = []
     for i in range(hei):
         for j in range(wid):
-            floor_list.append(Room())
+            floor_list.append(Grid())
         obj_grid.append(floor_list)
         floor_list = []
     sw_corner = populate_grid(wid, hei, obj_grid)
     return sw_corner
-

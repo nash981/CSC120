@@ -1,0 +1,6 @@
+Testing is_rev_sorted_recursive()...
+
+Input list: 88 -> 79 -> 79 -> 79 -> 70 -> 53 -> 53 -> 35 -> 31 -> 0 -> -3 -> -10 -> -11 -> -19 -> -21 -> -27 -> -27 -> -28 -> -37 -> -44
+retval: True
+
+TESTCASE COMPLETED

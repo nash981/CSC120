@@ -1,0 +1,6 @@
+Testing is_rev_sorted_recursive()...
+
+Input list: ('ytj', 22) -> ('qkh', 24) -> ('swc', 11) -> ('nsn', 39) -> ('nbj', 18)
+retval: False
+
+TESTCASE COMPLETED

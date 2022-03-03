@@ -1,0 +1,6 @@
+Testing is_rev_sorted_recursive()...
+
+Input list: ('qwi', 85) -> ('dyx', 37) -> ('crl', -25) -> ('bgt', 8) -> ('bdz', -50)
+retval: True
+
+TESTCASE COMPLETED

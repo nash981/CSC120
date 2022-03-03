@@ -1,0 +1,6 @@
+Testing is_rev_sorted_recursive()...
+
+Input list: abc
+retval: True
+
+TESTCASE COMPLETED

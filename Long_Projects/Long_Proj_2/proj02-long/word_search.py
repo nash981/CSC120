@@ -12,6 +12,7 @@ This is important because if None is a value, "returns nothing,"
 "doesn't return anything," and "no returns" are incorrect.
 """
 
+
 def read_file(text):
     '''
     This function reads the text file and does two things:
@@ -29,7 +30,7 @@ def read_file(text):
     word = []
     grid_read = True
     for lines in text:
-        if len(lines.strip()) == 0: 
+        if len(lines.strip()) == 0:
             grid_read = False
 
         else:
@@ -41,7 +42,8 @@ def read_file(text):
                 row = []
             else:
                 word.append(lines.strip())
-    return grid ,word
+    return grid, word
+
 
 def grid_format(grid):
     '''
@@ -58,11 +60,12 @@ def grid_format(grid):
     grid : Returns the transformed grid.
     '''
     formatted_grid = []
-    for i in range(len(grid),0,-1):
-        formatted_grid.append(grid[i-1])
-    return(formatted_grid)
+    for i in range(len(grid), 0, -1):
+        formatted_grid.append(grid[i - 1])
+    return (formatted_grid)
 
-def linear_check(grid,x_index,y_index,word_len):
+
+def linear_check(grid, x_index, y_index, word_len):
     '''
     This function checks whether if the string of given word is possible
     in horizonatal and vertical directions.
@@ -84,7 +87,7 @@ def linear_check(grid,x_index,y_index,word_len):
     w: A boolean confirming whether the desired string is possible 
     in north direction
     '''
-    n,s,e,w = True,True,True,True
+    n, s, e, w = True, True, True, True
     grid_height = len(grid)
     grid_width = len(grid[0])
     if x_index - word_len < 0:
@@ -95,10 +98,10 @@ def linear_check(grid,x_index,y_index,word_len):
         s = False
     if y_index + word_len > grid_height:
         n = False
-    return n,s,e,w
+    return n, s, e, w
 
 
-def vertical_words(grid,y_index,x_index,word_len):
+def vertical_words(grid, y_index, x_index, word_len):
     '''
     This function extracts strings from the grid in 
     north, south ,east and west direction
@@ -116,30 +119,30 @@ def vertical_words(grid,y_index,x_index,word_len):
     east: string extracted in east direction
     west: string extracted in west direction
     '''
-    north_counter,south_counter,east_counter,west_counter = \
-        y_index,y_index,x_index,x_index
-    north,south,east,west = "","","",""
-    n,s,e,w = linear_check(grid,x_index,y_index,word_len)
+    north_counter, south_counter, east_counter, west_counter = \
+        y_index, y_index, x_index, x_index
+    north, south, east, west = "", "", "", ""
+    n, s, e, w = linear_check(grid, x_index, y_index, word_len)
     for i in range(word_len):
-        if n == True:
+        if n is True:
             north += grid[north_counter][x_index]
-        if s == True:    
-            south += grid[south_counter][x_index]  
-        
+        if s is True:
+            south += grid[south_counter][x_index]
+
         north_counter += 1
-        south_counter -= 1  
-        
-        if e ==True:    
+        south_counter -= 1
+
+        if e is True:
             east += grid[y_index][east_counter]
-        if w == True:    
+        if w is True:
             west += grid[y_index][west_counter]
-        
+
         east_counter += 1
         west_counter -= 1
-    return north,south,east,west
-    
+    return north, south, east, west
 
-def linear_direction(grid,y_index,x_index,word,word_len):
+
+def linear_direction(grid, y_index, x_index, word, word_len):
     '''
     This function finds whether the desired word is in 
     north, south, east or west direction.
@@ -155,19 +158,20 @@ def linear_direction(grid,y_index,x_index,word,word_len):
     If the word is in the grid : north/south/east/west
     If the word is not on the grid : None
     '''
-    north,south,east,west = vertical_words(grid,y_index,x_index,word_len)
+    north, south, east, west = vertical_words(grid, y_index, x_index, word_len)
     status = False
     if east == word:
         return "east"
     elif west == word:
-        return "west" 
+        return "west"
     elif north == word:
         return "north"
     elif south == word:
         return "south"
     return None
 
-def diagonal_check(grid,x_index,y_index,word_len):
+
+def diagonal_check(grid, x_index, y_index, word_len):
     '''
     This function checks whether if the string of given word is possible
     in horizonatal and diagonal directions.
@@ -189,20 +193,21 @@ def diagonal_check(grid,x_index,y_index,word_len):
     se: A boolean confirming whether the desired string is possible 
     in southeast direction
     '''
-    nw,ne,sw,se = True,True,True,True
+    nw, ne, sw, se = True, True, True, True
     grid_height = len(grid)
     grid_width = len(grid[0])
-    if (x_index+word_len > grid_width) or (y_index +word_len > grid_height):
+    if (x_index + word_len > grid_width) or (y_index + word_len > grid_height):
         ne = False
-    if (x_index-word_len) < 0 or (y_index +word_len > grid_height):
+    if (x_index - word_len) < 0 or (y_index + word_len > grid_height):
         nw = False
-    if (x_index-word_len < 0) or (y_index -word_len < 0):
+    if (x_index - word_len < 0) or (y_index - word_len < 0):
         sw = False
-    if (x_index+word_len > grid_width) or (y_index -word_len < 0):
+    if (x_index + word_len > grid_width) or (y_index - word_len < 0):
         se = False
-    return(nw,ne,sw,se)
-    
-def diagonal_words(grid,y_index,x_index,word_len):
+    return (nw, ne, sw, se)
+
+
+def diagonal_words(grid, y_index, x_index, word_len):
     '''
     This function extracts strings from the grid in 
     northwest, southeast ,northeast and southwest direction
@@ -220,29 +225,28 @@ def diagonal_words(grid,y_index,x_index,word_len):
     northeast: string extracted in northeast direction
     southwest: string extracted in southwest direction
     '''
-    north_counter,south_counter,east_counter,west_counter = \
-        y_index,y_index,x_index,x_index
-    nw,ne,sw,se = diagonal_check(grid,x_index,y_index,word_len)
-    south_w,south_e,north_w,north_e = "","","",""
+    north_counter, south_counter, east_counter, west_counter = \
+        y_index, y_index, x_index, x_index
+    nw, ne, sw, se = diagonal_check(grid, x_index, y_index, word_len)
+    south_w, south_e, north_w, north_e = "", "", "", ""
     for i in range(word_len):
         if ne == True:
             north_e += grid[north_counter][east_counter]
-        if se == True:    
-            south_e += grid[south_counter][east_counter]  
-        if sw ==True:    
+        if se == True:
+            south_e += grid[south_counter][east_counter]
+        if sw == True:
             south_w += grid[south_counter][west_counter]
-        if nw == True:    
+        if nw == True:
             north_w += grid[north_counter][west_counter]
-        
+
         east_counter += 1
         west_counter -= 1
         north_counter += 1
         south_counter -= 1
-    return south_w,south_e,north_w,north_e  
+    return south_w, south_e, north_w, north_e
 
 
-def diagonal_direction(grid,y_index,x_index,word,word_len):
-
+def diagonal_direction(grid, y_index, x_index, word, word_len):
     '''
     This function finds whether the desired word is in 
     northeast, southwest, southeast or northwest direction.
@@ -258,19 +262,20 @@ def diagonal_direction(grid,y_index,x_index,word,word_len):
     If the word is in the grid : northeast/southwest/southeast/northwest
     If the word is not on the grid : None
     '''
-    south_w,south_e,north_w,north_e = \
-        diagonal_words(grid,y_index,x_index,word_len)
+    south_w, south_e, north_w, north_e = \
+        diagonal_words(grid, y_index, x_index, word_len)
     if south_e == word:
-        return("southeast")
+        return ("southeast")
     if south_w == word:
-        return("southwest")
+        return ("southwest")
     if north_e == word:
-        return("northeast")
+        return ("northeast")
     if north_w == word:
-        return("northwest")
+        return ("northwest")
     return None
 
-def print_grid(y_index,x_index,direction,grid,word):
+
+def print_grid(y_index, x_index, direction, grid, word):
     '''
     This function inserts the word in its location 
     in a grid of periods (".") and then prints this final grid.
@@ -294,28 +299,28 @@ def print_grid(y_index,x_index,direction,grid,word):
         row = []
     word = list(word)
     for i in range(len(word)):
-        if direction == "east":    
-            final_grid[y_index][x_index+i] = word[i]
+        if direction == "east":
+            final_grid[y_index][x_index + i] = word[i]
         elif direction == "west":
-            final_grid[y_index][x_index-i]= word[i]
+            final_grid[y_index][x_index - i] = word[i]
         elif direction == "south":
-            final_grid[y_index-i][x_index]= word[i]
+            final_grid[y_index - i][x_index] = word[i]
         elif direction == "north":
-            final_grid[y_index+i][x_index]= word[i]
+            final_grid[y_index + i][x_index] = word[i]
         elif direction == "southeast":
-            final_grid[y_index-i][x_index+i] = word[i]
+            final_grid[y_index - i][x_index + i] = word[i]
         elif direction == "southwest":
-            final_grid[y_index-i][x_index-i] = word[i]
+            final_grid[y_index - i][x_index - i] = word[i]
         elif direction == "northeast":
-            final_grid[y_index+i][x_index+i] = word[i]
+            final_grid[y_index + i][x_index + i] = word[i]
         elif direction == "northwest":
-            final_grid[y_index+i][x_index-i] = word[i]
+            final_grid[y_index + i][x_index - i] = word[i]
     final_grid = grid_format(final_grid)
     for i in range(len(final_grid)):
         print("".join(final_grid[i]))
 
 
-def word_search(grid,word_set):
+def word_search(grid, word_set):
     '''
     This function finds the words in a given list in the 
     given grid.
@@ -333,14 +338,14 @@ def word_search(grid,word_set):
         for i in range(len(grid)):
             for j in range(len(grid[i])):
                 if grid[i][j] == initial_char:
-                    linear_status = linear_direction(grid,i,j,word,word_len)
+                    linear_status = linear_direction(grid, i, j, word, word_len)
                     diagonal_status = \
-                        diagonal_direction(grid,i,j,word,word_len)
+                        diagonal_direction(grid, i, j, word, word_len)
                     if linear_status != None:
-                        print_grid(i,j,linear_status,grid,word)
+                        print_grid(i, j, linear_status, grid, word)
                         status = True
                     elif diagonal_status != None:
-                        print_grid(i,j,diagonal_status,grid,word)
+                        print_grid(i, j, diagonal_status, grid, word)
                         status = True
 
         if status == False:
@@ -351,12 +356,14 @@ def main():
     print("Please give the puzzle filename:")
     filename = input()
     try:
-        text = open(filename,'r')
-        grid , words = read_file(text)  
+        text = open(filename, 'r')
+        grid, words = read_file(text)
         updated_grid = grid_format(grid)
-        status = word_search(updated_grid,words)
+        status = word_search(updated_grid, words)
 
     except FileNotFoundError or FileExistsError:
         print("Sorry, the file doesn't exist or cannot be opened.")
+
+
 if __name__ == '__main__':
     main()

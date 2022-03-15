@@ -14,17 +14,17 @@ This is important because if None is a value, "returns nothing,"
 
 
 def read_file(text):
-    '''
+    """
     This function reads the text file and does two things:
     1. Create a grid for the word search
     2. Creates a list of words to be searched.
     Parameters:
     text :  The file which is to be processed
-        
+
     Returns:
     grid: The grid on which the words are to be searched
-    word: List of words to be searched on the grid 
-    '''
+    word: List of words to be searched on the grid
+    """
     grid = []
     row = []
     word = []

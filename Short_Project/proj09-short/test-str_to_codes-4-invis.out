@@ -1,0 +1,16 @@
+Testing str_to_codes()...
+
+INPUT MESSAGE: 'abcdefabcdefabcdefabcdef'
+
+MAPPING:
+  'e'   000
+  'd'   001
+  'c'   010
+  'b'   011
+  'a'   100
+  '<END>'   101
+  'f'   11
+
+Returned value: ['100', '011', '010', '001', '000', '11', '100', '011', '010', '001', '000', '11', '100', '011', '010', '001', '000', '11', '100', '011', '010', '001', '000', '11', '101']
+
+TESTCASE COMPLETED

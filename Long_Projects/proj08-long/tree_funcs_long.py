@@ -1,7 +1,43 @@
+"""
+Author: Nishant Athawale
+Date: 22nd March 2022
+Assignment: Long Project 8: Trees
+Class: CSC 120
+Section Leader: Jason L'Italien
+Section : #5
+Description: In this assignment, I develop different functions
+            to do the following:
+            1. Find the maximum value in a tree
+            2. Find the maximum value in a Binary Search Tree
+            6. Find a given value in a tree
+            7. Find a given value in a Binary Search Tree
+            9. Insert a value in a Binary Search Tree
+            3. Pre-Order traversal of the tree
+            4. In-Order traversal of the tree
+            5. Post-Order traversal of the tree
+            8. Return the values of the tree as an array in the order of
+               in-order traversal
+            Note: For the purpose of this assignment, all trees used are
+            binary trees.
+By default (unless you tell a function to return something else),
+all functions return None. None is actually a special type of object.
+This is important because if None is a value, "returns nothing,"
+"doesn't return anything," and "no returns" are incorrect.
+"""
 from tree_node import *
 
 
 def tree_max(root):
+    """
+    This take the root node of the tree as a parameter and recursively
+    finds the maximum value in the Binary Tree.
+
+    Parameters:
+        root: Root Node of the binary
+    Returns:
+        The maximum value among the root value, maximum value of the
+        right subtree and maximum value of the left subtree.
+    """
     if root.left is None and root.right is None:
         return root.val
     elif root.left is not None and root.right is None:
@@ -32,6 +68,16 @@ def tree_max(root):
 
 
 def bst_max(root):
+    """
+    This take the root node of the tree as a parameter and recursively
+    finds the maximum value in the Binary Search Tree by recursively
+    accessing and returning the right most leaf node.
+    Parameters:
+        root: Root Node of the binary
+    Returns:
+        The value of the right most leaf node in the subsequent
+        subtree.
+    """
     if root.right is None:
         return root.val
     else:
@@ -39,6 +85,17 @@ def bst_max(root):
 
 
 def bst_search_loop(root, val):
+    """
+    This function searches for a given value in the given binary search
+    tree and returns the node containing that value. This function finds
+    the value by using loops.
+    Parameters:
+        root: Root Node of the binary
+        val: Desired value to be searched
+    Return:
+        If value found: The node containing the desired value
+        If value not found: None
+    """
     curr = root
     if curr is not None:
         while curr.left is not None or curr.right is not None:
@@ -60,6 +117,16 @@ def bst_search_loop(root, val):
 
 
 def tree_search(root, val):
+    """
+    This function recursively searches for a given value in the given
+    binary tree and returns the node containing that value.
+    Parameters:
+        root: Root Node of the binary
+        val: Desired value to be searched
+    Returns:
+        If value found: The node containing the desired value
+        If value not found: None
+    """
     if root is None:
         return None
     elif root.val == val:
@@ -83,6 +150,14 @@ def tree_search(root, val):
 
 
 def bst_insert_loop(root, val):
+    """
+    This function inserts a given value in a given binary
+    search tree. It finds the node of insertion by using recursion.
+    Parameters:
+        root: Root Node of the binary
+        val: Desired value to be searched
+    Returns: None
+    """
     curr = root
     while True:
         if curr.val > val:
@@ -100,6 +175,14 @@ def bst_insert_loop(root, val):
 
 
 def pre_order_traversal_print(root):
+    """
+    This function prints a given tree by using pre order
+    traversal
+    Parameters:
+        root: Root Node of the binary
+    Returns:
+        None
+    """
     if root is None:
         return None
     else:
@@ -114,6 +197,14 @@ def pre_order_traversal_print(root):
 
 
 def in_order_traversal_print(root):
+    """
+    This function prints a given tree by using in order
+    traversal
+    Parameters:
+        root: Root Node of the binary
+    Returns:
+        None
+    """
     if root is None:
         return None
     else:
@@ -132,6 +223,14 @@ def in_order_traversal_print(root):
 
 
 def post_order_traversal_print(root):
+    """
+    This function prints a given tree by using post order
+    traversal
+    Parameters:
+        root: Root Node of the binary
+    Returns:
+        None
+    """
     if root is None:
         return None
     else:
@@ -146,30 +245,23 @@ def post_order_traversal_print(root):
 
 
 def in_order_vals(root):
+    """
+    This function returns an array of the values stored in a tree
+    ordered in the way of in-order traversal.
+    Parameters:
+        root: Root Node of the binary
+    Returns:
+        An array of the values stored in the array.
+    """
     val = []
     if root is not None:
         if root.left is None and root.right is None:
-            return root.val
+            return [root.val]
         elif root.left is not None and root.right is None:
-            if type(in_order_vals(root.left)) is list:
-                val += in_order_vals(root.left)
-            else:
-                val.append(in_order_vals(root.left))
-            val.append(root.val)
+            val += in_order_vals(root.left) + [root.val]
         elif root.left is None and root.right is not None:
-            val.append(root.val)
-            if type(in_order_vals(root.right)) is list:
-                val += in_order_vals(root.right)
-            else:
-                val.append(in_order_vals(root.right))
+            val += [root.val] + in_order_vals(root.right)
         elif root.left is not None and root.right is not None:
-            if type(in_order_vals(root.left)) is list:
-                val += in_order_vals(root.left)
-            else:
-                val.append(in_order_vals(root.left))
-            val.append(root.val)
-            if type(in_order_vals(root.right)) is list:
-                val += in_order_vals(root.right)
-            else:
-                val.append(in_order_vals(root.right))
+            val += in_order_vals(root.left) + [root.val] + \
+                   in_order_vals(root.right)
     return val

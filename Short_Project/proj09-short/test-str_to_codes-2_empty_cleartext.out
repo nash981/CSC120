@@ -1,0 +1,23 @@
+Testing str_to_codes()...
+
+INPUT MESSAGE: ''
+
+MAPPING:
+  'T'   00000
+  'l'   000010
+  '<END>'   000011
+  '.'   00010
+  'y'   00011
+  's'   001
+  ' '   01
+  't'   100
+  'i'   101
+  'o'   11000
+  'n'   11001
+  'h'   1101
+  'e'   1110
+  'a'   1111
+
+Returned value: ['000011']
+
+TESTCASE COMPLETED

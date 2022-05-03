@@ -1,0 +1,64 @@
+START TESTCASE: Testing has_crossroads(), after rotation, for all tiles
+
+tile01: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile02: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile03: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    True
+    True
+    True
+    True
+tile04: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile05: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile06: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile07: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile08: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile09: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile10: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    True
+    True
+    True
+    True
+tile11: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+tile12: Calling has_crossroads() on the original tile, and then on 3 rotations:
+    False
+    False
+    False
+    False
+
+END TESTCASE

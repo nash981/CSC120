@@ -1,6 +1,0 @@
-Passing the set of keys from the dictionary to the sorted() function...
-Printing out the dictionary contents, in character order:
-a : 29
-Calculating the total count of all characters <= to the argument...
-
-29

@@ -47,13 +47,13 @@ game.add( 1,-2, carcassonne_tile.tile07                           , confirm=Fals
 game.add( 2,-2, carcassonne_tile.tile08                           , confirm=False)
 print()
 
-print("Calling trace_road() on a few locations...")
+# print("Calling trace_road() on a few locations...")
 print(f"  t_r( 0, 0,E) returned: {game.trace_road( 0, 0,E)}")
 print(f"  t_r( 0, 0,W) returned: {game.trace_road( 0, 0,W)}")
-print(f"  t_r( 1, 0,W) returned: {game.trace_road( 1, 0,W)}")
+# print(f"  t_r( 1, 0,W) returned: {game.trace_road( 1, 0,W)}")
 print(f"  t_r( 2, 2,E) returned: {game.trace_road( 2, 2,E)}")
 print(f"  t_r( 3, 2,W) returned: {game.trace_road( 3, 2,W)}")
-print(f"  t_r(-1, 0,W) returned: {game.trace_road(-1, 0,W)}")
+# print(f"  t_r(-1, 0,W) returned: {game.trace_road(-1, 0,W)}")
 print(f"  t_r(-2, 0,E) returned: {game.trace_road(-2, 0,E)}")
 
 print("END TESTCASE")

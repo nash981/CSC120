@@ -14,6 +14,7 @@ This is important because if None is a value, "returns nothing,"
 """
 from carcassonne_tile import *
 
+
 class CarcassonneMap:
     """
     This class represents the map of a particular Carcassonne game.
@@ -37,6 +38,7 @@ class CarcassonneMap:
 
 
     """
+
     def __init__(self):
         """
         This constructor initializes a new Map object with a map field
@@ -76,14 +78,14 @@ class CarcassonneMap:
         """
         border_co_ordinates = set()
         for keys in self._map:
-            if (keys[0]+1, keys[1]) not in self._map.keys():
-                border_co_ordinates.add((keys[0]+1, keys[1]))
-            if (keys[0]-1, keys[1]) not in self._map.keys():
-                border_co_ordinates.add((keys[0]-1, keys[1]))
-            if (keys[0], keys[1]+1) not in self._map.keys():
-                border_co_ordinates.add((keys[0], keys[1]+1))
-            if (keys[0], keys[1]-1) not in self._map.keys():
-                border_co_ordinates.add((keys[0], keys[1]-1))
+            if (keys[0] + 1, keys[1]) not in self._map.keys():
+                border_co_ordinates.add((keys[0] + 1, keys[1]))
+            if (keys[0] - 1, keys[1]) not in self._map.keys():
+                border_co_ordinates.add((keys[0] - 1, keys[1]))
+            if (keys[0], keys[1] + 1) not in self._map.keys():
+                border_co_ordinates.add((keys[0], keys[1] + 1))
+            if (keys[0], keys[1] - 1) not in self._map.keys():
+                border_co_ordinates.add((keys[0], keys[1] - 1))
         return border_co_ordinates
 
     def get(self, x, y):
@@ -174,11 +176,11 @@ class CarcassonneMap:
             True: If tile is / can be inserted in the given position
             False: If tile is / can be not inserted in the given position.
         """
-        error_check, origin_check = self.error_check(x,y,tile)
+        error_check, origin_check = self.error_check(x, y, tile)
         if (x, y) not in self._map and origin_check is False:
             if confirm is True and tryOnly is False:
                 if error_check is True:
-                    self._map[(x,y)] = tile
+                    self._map[(x, y)] = tile
                 return error_check
             elif confirm is True and tryOnly is True:
                 return error_check
@@ -192,7 +194,18 @@ class CarcassonneMap:
             return False
 
     def recurse(self, x, y, side, og_posn):
-        next_side = self._map[(x,y)].road_get_connection(side)
+        """
+        This function is the helper function for trace_road_one_direction_reversed
+         function which recursively traces the road.
+        Parameters:
+            Parameters:
+            x: x_co-ordinates of the given tile
+            x: y_co-ordinates of the given tile
+        Returns:
+            List of location tuples
+
+        """
+        next_side = self._map[(x, y)].road_get_connection(side)
         output = [(x, y, side, next_side)]
         if next_side != -1 and (x, y, next_side) != og_posn:
             offsets = self.offset_dict[next_side]
@@ -203,10 +216,21 @@ class CarcassonneMap:
         return output
 
     def trace_road_one_direction(self, x, y, side):
+        """
+       This function traces the roads in on direction and returns
+        the value in an outbound format.
+       Parameters:
+           Parameters:
+           x: x_co-ordinates of the given tile
+           x: y_co-ordinates of the given tile
+       Returns:
+           List of location tuples
+
+       """
         if side != -1:
             offsets = self.offset_dict[side]
-            x_next, y_next = x+offsets[0], y+offsets[1]
-            if (x_next,y_next) in self._map:
+            x_next, y_next = x + offsets[0], y + offsets[1]
+            if (x_next, y_next) in self._map:
                 og_posn = (x, y, side)
                 output = self.recurse(x_next, y_next,
                                       self.side_dict[side], og_posn)
@@ -214,40 +238,161 @@ class CarcassonneMap:
         return []
 
     def recurse_reversed(self, x, y, side, og_posn):
-        next_side = self._map[(x,y)].road_get_connection(side)
+        """
+        This function is the helper function for trace_road_one_direction_reversed
+         function which recursively traces the road.
+        Parameters:
+            Parameters:
+            x: x_co-ordinates of the given tile
+            x: y_co-ordinates of the given tile
+        Returns:
+            List of location tuples
+
+        """
+        next_side = self._map[(x, y)].road_get_connection(side)
         output = [(x, y, next_side, side)]
         if next_side != -1 and (x, y, next_side) != og_posn:
             offsets = self.offset_dict[next_side]
             x_next, y_next = x + offsets[0], y + offsets[1]
             if (x_next, y_next) in self._map:
                 output = self.recurse_reversed(x_next, y_next,
-                                      self.side_dict[next_side], og_posn)\
+                                               self.side_dict[next_side], og_posn) \
                          + output
 
         return output
 
     def trace_road_one_direction_reversed(self, x, y, side):
+        """
+        This function traces the roads in on direction and returns
+         the value in an inbound format.
+        Parameters:
+            Parameters:
+            x: x_co-ordinates of the given tile
+            x: y_co-ordinates of the given tile
+        Returns:
+            List of location tuples
+
+        """
         if side != -1:
             offsets = self.offset_dict[side]
-            x_next, y_next = x+offsets[0], y+offsets[1]
-            if (x_next,y_next) in self._map:
+            x_next, y_next = x + offsets[0], y + offsets[1]
+            if (x_next, y_next) in self._map:
                 og_posn = (x, y, side)
                 output = self.recurse_reversed(x_next, y_next,
-                                      self.side_dict[side], og_posn)
+                                               self.side_dict[side], og_posn)
                 return output
         return []
 
     def trace_road(self, x, y, side):
-        other_side = self._map[(x,y)].road_get_connection(side)
+        """
+        This function traces the roads in both directions.
+        Parameters:
+            Parameters:
+            x: x_co-ordinates of the given tile
+            x: y_co-ordinates of the given tile
+        Returns:
+            List of location tuples
+
+        """
+        other_side = self._map[(x, y)].road_get_connection(side)
         if other_side != -1:
             passed_side = self.trace_road_one_direction(x, y, side)
             curr_tile = [(x, y, other_side, side)]
             second_side = self.trace_road_one_direction_reversed(x, y, other_side)
-            if passed_side[:-1] != second_side[1:]:
-                output_list = second_side + curr_tile + passed_side
+            output_list = second_side + curr_tile + passed_side
+            if len(output_list) >= 4 and passed_side[:-1] == second_side[1:]:
+                return passed_side
             else:
-                output_list = second_side[1:] + curr_tile
-            return output_list
+                return output_list
         else:
+            passed_side = []
+            passed_side = [(x, y, -1, side)] + \
+                          self.trace_road_one_direction(x, y, side)
+            return passed_side
+
+    def status_check(self, tile_list):
+        status = True
+        for tile in tile_list:
+            x = tile[0]
+            y = tile[1]
+            if self._map[(x,y)].North == "city":
+                if (x+self.offset_dict[0][0],y+self.offset_dict[0][1]) not in self._map:
+                    status = False
+            if self._map[(x,y)].East == "city":
+                if (x+self.offset_dict[1][0],y+self.offset_dict[1][1]) not in self._map:
+                    status = False
+            if self._map[(x,y)].South == "city":
+                if (x+self.offset_dict[2][0],y+self.offset_dict[2][1]) not in self._map:
+                    status = False
+            if self._map[(x,y)].West == "city":
+                if (x+self.offset_dict[3][0],y+self.offset_dict[3][1]) not in self._map:
+                    status = False
+        return status
+
+
+
+    def trace_city(self,a,b,side):
+        """
+        This functions traces all the city locations on the map
+        Parameters:
+            a: x_co-ordinates of the given tile
+            b: y_co-ordinates of the given tile
+        Returns:
+            A tuple containing the completeness status and all list of location tuples.
+        """
+
+        to_do_list = [(a,b,side)]
+        done_list = []
+        city_loc_list = []
+        border_tuples = self.find_map_border()
+        while len(to_do_list) != 0:
+            # print(to_do_list)
+            x, y = to_do_list[0][0], to_do_list[0][1]
+            side, next_loc = to_do_list[0][2], (x+self.offset_dict[side][0], y+self.offset_dict[side][1])
+            if(x,y,side) not in city_loc_list:
+                city_loc_list.append((x,y,side))
+            if next_loc in self._map:
+                if next_loc not in done_list and self._map[next_loc].get_edge(self.side_dict[side]) == "city":
+                    to_do_list.append ((x + self.offset_dict[side][0], y + self.offset_dict[side][1], self.side_dict[side]))
+            if self._map[(x,y)].Centre == "city":
+                if side != 0 and self._map[(x,y)].get_edge(0) == "city":
+                    if (x, y, 0) not in city_loc_list:
+                        city_loc_list.append((x, y, 0))
+                    if (x + self.offset_dict[0][0], y + self.offset_dict[0][1]) in self._map:
+                        if self._map[(x + self.offset_dict[0][0], y + self.offset_dict[0][1])].get_edge(self.side_dict[0]) == "city":
+                            to_do_list.append((x+self.offset_dict[0][0], y+self.offset_dict[0][1],self.side_dict[0]))
+
+                if (x + self.offset_dict[1][0], y + self.offset_dict[1][1]) in self._map:
+                    if side != 1 and self._map[(x, y)].get_edge(1) == "city":
+                        if (x, y, 1) not in city_loc_list:
+                            city_loc_list.append((x, y, 1))
+
+                        if self._map[(x + self.offset_dict[1][0], y + self.offset_dict[1][1])].get_edge(self.side_dict[1]) == "city":
+                            to_do_list.append((x + self.offset_dict[1][0], y + self.offset_dict[1][1], self.side_dict[1]))
+
+                if (x + self.offset_dict[2][0], y + self.offset_dict[2][1]) in self._map:
+                    if side != 2 and self._map[(x, y)].get_edge(2) == "city":
+                        if (x, y, 2) not in city_loc_list:
+                            city_loc_list.append((x, y, 2))
+
+                        if self._map[(x + self.offset_dict[2][0], y + self.offset_dict[2][1])].get_edge(self.side_dict[2]) == "city":
+                            to_do_list.append((x + self.offset_dict[2][0], y + self.offset_dict[2][1], self.side_dict[2]))
+
+                if (x + self.offset_dict[3][0], y + self.offset_dict[3][1]) in self._map:
+                    if side != 3 and self._map[(x, y)].get_edge(3) == "city":
+                        if (x, y, 3) not in city_loc_list:
+                            city_loc_list.append((x, y, 3))
+                        if self._map[(x + self.offset_dict[3][0], y + self.offset_dict[3][1])].get_edge(self.side_dict[3]) == "city":
+                            to_do_list.append((x + self.offset_dict[3][0], y + self.offset_dict[3][1], self.side_dict[3]))
+            done_list.append(to_do_list[0])
+            print(done_list)
+            print(border_tuples)
+            if len(to_do_list) == 2:
+                to_do_list = [to_do_list[1]]
+            else:
+                to_do_list.pop(0)
+        status = self.status_check(done_list)
+        city_loc_list.sort()
+        return status, city_loc_list
 
 

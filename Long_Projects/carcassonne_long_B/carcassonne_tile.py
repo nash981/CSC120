@@ -199,6 +199,7 @@ class CarcassonneTile:
             return True
         return False
 
+
     def rotate(self):
         """
         This function rotates the existing tile object by passing the

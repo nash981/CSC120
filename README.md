@@ -1,2 +1,2 @@
 # CSC120
-Gotta survive it.
+Assignments for CSC 120: Introduction to Computer Programming 2
